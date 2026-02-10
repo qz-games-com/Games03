@@ -27,7 +27,7 @@
 	<script>
 		var buildUrl = "Build";
 		var versionFolder = "/Games03/escape-road-2/25102308/";
-		buildUrl = "/"+versionFolder + buildUrl;
+		buildUrl = "./"+versionFolder + buildUrl;
 		var loaderUrl = buildUrl + "/escape-road-2-v25102308.loader.js";
 		var config = {
 			dataUrl: buildUrl + "/escape-road-2-v25102308.data.unityweb",
@@ -40,7 +40,7 @@
 		};
 		config.gameId = "escape-road-2";
 		config.eventLog = true;
-		config.buildAPI = "";
+		config.buildAPI = "https://event.azgame.io/apiaz/event";
 		let currentDate = new Date();
 		let endLogDate = new Date("2025-11-11T03:30:26.266Z");
 		if(currentDate>endLogDate){
